@@ -19,7 +19,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
-          model: 'Review',
+          model: 'Reviews',
           key: 'id'
         },
         onDelete: 'CASCADE'
@@ -41,7 +41,7 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    options.tableName = "ReviewImages";
+    options.tableName = 'ReviewImages';
     return queryInterface.dropTable(options);
   }
 };
