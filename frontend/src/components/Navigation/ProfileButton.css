@@ -1,0 +1,26 @@
+.icon {
+  padding: 2px;
+  font-size: 30px;
+}
+
+.profile-dropdown {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute; /* Position it below the button */
+  right: 20px;
+  background-color: white; /* Background color */
+  border: 1px solid #ccc; /* Border */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Shadow */
+  display: grid;
+  width: 150px;
+}
+  
+.profile-dropdown li {
+  padding: 4px 4px;
+  width: 142px;
+}
+  
+.profile-dropdown li:hover {
+  background-color: #f0f0f0;
+}

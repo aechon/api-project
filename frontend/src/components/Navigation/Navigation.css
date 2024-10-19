@@ -1,3 +1,25 @@
 .hidden {
   display: none;
 }
+
+body {
+  margin: 0px;
+}
+
+ul {
+  list-style: none; /* Remove bullet points */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  margin: 0; /* Remove default margin */
+  display: flex; /* Display items in a row */
+  border-bottom: 2px;
+  border-bottom-style: solid;
+  border-color: #CCCCCC;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 70px
+}

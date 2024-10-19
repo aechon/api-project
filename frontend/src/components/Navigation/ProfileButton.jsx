@@ -1,10 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { FaUserCircle } from 'react-icons/fa';
+import { RxDropdownMenu } from "react-icons/rx";
 import * as sessionActions from '../../store/session';
 import OpenModalMenuItem from './OpenModalMenuItem.jsx';
 import LoginFormModal from '../LoginFormModal/LoginFormModal.jsx';
 import SignupFormModal from '../SignupFormModal/SignupFormModal.jsx';
+import './ProfileButton.css';
+
 
 function ProfileButton({ user }) {
   const dispatch = useDispatch();
@@ -43,13 +46,13 @@ function ProfileButton({ user }) {
   return (
     <>
       <button onClick={toggleMenu}>
-        <FaUserCircle />
+        <RxDropdownMenu class='icon' />
+        <FaUserCircle class='icon' />
       </button>
       <ul className={ulClassName} ref={ulRef}>
         {user ? (
           <>
-            <li>{user.username}</li>
-            <li>{user.firstName} {user.lastName}</li>
+            <li>Hello, {user.firstName}</li>
             <li>{user.email}</li>
             <li>
               <button onClick={logout}>Log Out</button>
