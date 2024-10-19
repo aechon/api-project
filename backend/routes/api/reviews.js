@@ -116,8 +116,6 @@ router.post(`/:reviewId/images`, requireAuth, async (req, res) => {
 });
 
 
-
-
 router.put(`/:reviewId`, requireAuth, async (req, res) =>  {
   const { reviewId } = req.params;
   const { review, stars } = req.body;
@@ -136,7 +134,6 @@ router.put(`/:reviewId`, requireAuth, async (req, res) =>  {
           errors: errors
       });
   }
-
 
   const reviewEntry = await Review.findOne({
       where: { id: reviewId },
@@ -165,10 +162,6 @@ router.put(`/:reviewId`, requireAuth, async (req, res) =>  {
 
   return res.status(200).json(response); 
 });
-
-
-
-
 
 
 router.delete(`/:reviewId`, requireAuth, async (req, res) => {
