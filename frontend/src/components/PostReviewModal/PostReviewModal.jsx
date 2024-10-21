@@ -57,7 +57,7 @@ function PostReviewModal({setNewReview}) {
         <span className='reviewSpan'>
             {[1, 2, 3, 4, 5].map((star) => {
             return (  
-                <span
+                <span key={star}
                 className='start'
                 style={{
                     cursor: 'pointer',

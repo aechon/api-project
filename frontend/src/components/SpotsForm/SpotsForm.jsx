@@ -35,11 +35,9 @@ function SpotForm() {
   const [photo5, setPhoto5] = useState("");
 
   const [errors, setErrors] = useState({});
-  const [submitted, setSubmitted] = useState(false);
   const [buttonText, setButtonText] = useState('Create Spot')
 
   const spot = useSelector(state => state.spots);
-  const image = useSelector(state => state.image.image)
   const navigate = useNavigate();
   
   const id = useLocation().pathname.split('/')[2];
@@ -84,7 +82,6 @@ function SpotForm() {
     )
     .then(()=> {
       navigate(`/spots/${id}`);
-      setSubmitted(true);
     })
     .catch(async (res) => {
       const data = await res.json();
@@ -141,7 +138,7 @@ function SpotForm() {
       <form onSubmit={handleSubmit}>
 
         <div className='formDiv'>
-          <h3>Where's your place located?</h3>
+          <h3>Where`&apos;`s your place located?</h3>
           <text>Guests will only get your exact address once they booked a reservation</text>
           <label>
             <p>Country</p>
@@ -217,7 +214,7 @@ function SpotForm() {
         </div>
         <div className='formDiv'>
           <h3>Create a title for your spot</h3>
-          <text>Catch guests' attention with a spot title that highlights what makes your place special</text>
+          <text>Catch guests`&apos;` attention with a spot title that highlights what makes your place special</text>
           <label>
             <input
               type="text"
