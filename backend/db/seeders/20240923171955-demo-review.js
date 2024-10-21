@@ -23,6 +23,12 @@ module.exports = {
         review: 'Another review',
         stars: 3
       },
+      {
+        spotId: 2,
+        userId: 1,
+        review: 'More test reviews',
+        stars: 3
+      },
     ]);
   },
 

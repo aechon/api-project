@@ -40,6 +40,26 @@ module.exports = {
         spotId: 6,
         url: 'https://a0.muscache.com/im/ml/photo_enhancement/pictures/miso/Hosting-36767861/original/ffcc6215-0b1c-4e8c-b2e0-473b3c801014.jpeg?im_w=1200',
         preview: true
+      },
+      {
+        spotId: 2,
+        url: 'https://a0.muscache.com/im/ml/photo_enhancement/pictures/miso/Hosting-36767861/original/ffcc6215-0b1c-4e8c-b2e0-473b3c801014.jpeg?im_w=1200',
+        preview: false
+      },
+      {
+        spotId: 2,
+        url: 'https://a0.muscache.com/im/ml/photo_enhancement/pictures/miso/Hosting-36767861/original/ffcc6215-0b1c-4e8c-b2e0-473b3c801014.jpeg?im_w=1200',
+        preview: false
+      },
+      {
+        spotId: 2,
+        url: 'https://a0.muscache.com/im/ml/photo_enhancement/pictures/miso/Hosting-36767861/original/ffcc6215-0b1c-4e8c-b2e0-473b3c801014.jpeg?im_w=1200',
+        preview: false
+      },
+      {
+        spotId: 2,
+        url: 'https://a0.muscache.com/im/ml/photo_enhancement/pictures/miso/Hosting-36767861/original/ffcc6215-0b1c-4e8c-b2e0-473b3c801014.jpeg?im_w=1200',
+        preview: false
       }
     ], { validate: true });
   },
