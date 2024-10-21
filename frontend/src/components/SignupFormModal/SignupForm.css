@@ -1,0 +1,27 @@
+.signUpForm {
+    width: 500px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.signUpElements {
+    margin: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.signUpButton {
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}

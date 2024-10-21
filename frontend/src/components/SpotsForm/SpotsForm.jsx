@@ -203,7 +203,8 @@ function SpotForm() {
           <h3>Describe your place to guests</h3>
           <text>Mention the best features of your space, any special amentities like fast wifi or parking, and what you love about the neighborhood</text>
           <label>
-            <input
+            <textarea
+              className='descriptionBox'
               type="text"
               value={description}
               placeholder='Please write at least 30 characters'
@@ -228,14 +229,16 @@ function SpotForm() {
         <div className='formDiv'>
           <h3>Set a base price for your spot</h3>
           <text>Competitive pricing can help your listing stand out and rank higher in search results.</text>
-          <label>
+          <div className='priceDiv'>
+            <label>
             <input
-              type="text"
+              type="number"
               value={price}
               placeholder='Price per night (USD)'
               onChange={(e) => setPrice(e.target.value)}
             />
           </label>
+          </div>
           {errors.price && <p className='error'>{errors.price}</p>}
         </div>
         <div className='formDiv'>

@@ -1,0 +1,29 @@
+.loginForm {
+    width: 400px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.loginElements {
+    margin: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.loginField {
+    width: 300px;
+    display: grid;
+}
+
+.loginButton {
+    width: 318px;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
