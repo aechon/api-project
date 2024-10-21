@@ -13,13 +13,29 @@ ul {
   padding-top: 10px;
   margin: 0; /* Remove default margin */
   display: flex; /* Display items in a row */
-  border-bottom: 2px;
-  border-bottom-style: solid;
-  border-color: #CCCCCC;
   align-items: center;
   justify-content: space-between;
 }
 
+.navigation {
+  border-bottom: 2px;
+  border-bottom-style: solid;
+  border-color: #CCCCCC;
+}
+
 .logo {
   height: 70px
+}
+
+.navButtons {
+  display: flex;
+  align-items: center;
+}
+
+.profileButton {
+  display: grid;
+}
+
+.navLink {
+  padding-right: 20px;
 }

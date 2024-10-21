@@ -1,0 +1,43 @@
+form {
+    padding-top: 30px;
+}
+
+.formDiv {
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-color: #CCCCCC;
+    padding-bottom: 20px;
+}
+
+label {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+    
+  input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+      
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+    
+  button {
+    cursor: pointer;
+  }
+  
+  p.error {
+    color: red;
+    text-align: center;
+  }
+
+  .formSubmit {
+    margin: auto;
+    margin-top: 20px;
+  }

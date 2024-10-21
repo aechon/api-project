@@ -7,16 +7,26 @@ import logo from './Icon/logo.png';
 function Navigation({ isLoaded }) {
   const sessionUser = useSelector(state => state.session.user);
 
+  let createSpotLink= null;
+  if (sessionUser) {
+    createSpotLink = (
+        <NavLink to='/spots/new' className="navLink"> Create A New Spot </NavLink>
+    );
+  }
+
   return (
-    <ul>
+    <ul className='navigation'>
       <li>
         <NavLink to="/">
           <img className='logo' src={logo}></img>
         </NavLink>
       </li>
       {isLoaded && (
-        <li>
-          <ProfileButton user={sessionUser} />
+        <li className='navButtons'>
+          {createSpotLink}
+          <div className='profileButton'>
+            <ProfileButton user={sessionUser} />
+          </div>
         </li>
       )}
     </ul>
