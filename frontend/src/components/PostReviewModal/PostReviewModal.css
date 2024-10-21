@@ -1,0 +1,31 @@
+.reviewForm {
+    width: 450px;
+    height: 400px;
+    display: grid;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.reviewFormTitle {
+    margin: auto;
+}
+
+.reviewTextBox {
+    width: 400px;
+    height: 200px;
+    margin: auto;
+}
+
+.reviewSpan {
+    margin: auto;
+}
+
+p.error {
+    color: red;
+    text-align: center;
+}
+
+.starButton {
+    background: none;
+    border: none;
+}

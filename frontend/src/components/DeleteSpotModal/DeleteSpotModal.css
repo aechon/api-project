@@ -1,0 +1,26 @@
+.deleteBox {
+    width: 350px;
+    height: 200px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.deleteElements {
+    margin: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.deleteButton {
+    width: 300px;
+}
+
+.deleteConfirm {
+    background-color: red;
+}
+
+.deleteDecline {
+    background-color: gray;
+}
