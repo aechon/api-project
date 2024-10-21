@@ -67,6 +67,8 @@ function SpotForm() {
     e.preventDefault();
     setErrors({});
 
+    if (!isValidUrl(previewPhoto) || previewPhoto === '') return;
+
     if (id !== 'new') {
       dispatch(updateSpot({
         address,
@@ -124,8 +126,6 @@ function SpotForm() {
       //     preview: false
       //     }, spotData.id));
       // };
-
-
       navigate(`/spots/${spotData.id}`);
     }
     }
