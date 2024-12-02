@@ -63,11 +63,33 @@ function SpotForm() {
     }
   }, [spot, id])
 
+  const validate = () => {
+    const errors = {};
+
+    if (!country) errors.country = 'Country is required';
+    if (!address) errors.address = 'Street address is required';
+    if (!city) errors.city = 'City is required';
+    if (!state) errors.state = 'State is required';
+    if (!lat || lat > 90 || lat < -90) errors.lat = 'Latitude must be within -90 and 90';
+    if (!lng || lng > 180 || lng < -180) errors.lng = 'Longitude must be within -180 and 180';
+    if (!description) errors.description = 'Description is required';
+    if (description && description.length < 30) errors.description = 'Description must be at least 30 characters';
+    if (!name) errors.name = 'Name is required';
+    if (name && name.length > 50) errors.name = 'Name must be less than 50 characters';
+    if (!price) errors.price = 'Price is required';
+    if (price && price < 0) errors.price = 'Price per day must be a positive number';
+    if (!isValidUrl(previewPhoto) || previewPhoto === '') errors.preview = 'Invalid URL';
+
+    return errors;
+  }
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setErrors({});
-
-    if (!isValidUrl(previewPhoto) || previewPhoto === '') return;
+    const errors = validate();
+    const errorContent = Object.values(errors);
+    console.log(errors);
+    if(errorContent.length) return setErrors(errors)
 
     if (id !== 'new') {
       dispatch(updateSpot({
