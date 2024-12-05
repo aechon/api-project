@@ -3,9 +3,8 @@ import { useDispatch } from 'react-redux';
 import { useModal } from '../../context/Modal';
 import './PostReviewModal.css';
 import { postReview } from '../../store/reviews';
-import { useLocation } from 'react-router-dom';
 
-function PostReviewModal({setNewReview}) {
+function PostReviewModal({setNewReview, id}) {
   const dispatch = useDispatch();
   const [review, setReview] = useState("");
   const [stars, setStars] = useState(0);
@@ -14,7 +13,6 @@ function PostReviewModal({setNewReview}) {
   const { closeModal } = useModal();
   const [disable, setDisable] = useState(true);
 
-  const id = useLocation().pathname.split('/')[2];
 
   useEffect(() => {
     if (review.length < 10 || stars === 0) setDisable(true);
@@ -25,9 +23,6 @@ function PostReviewModal({setNewReview}) {
     e.preventDefault();
     setErrors('');
     setNewReview(true);
-    console.log(stars);
-    console.log(review);
-    console.log(id);
     return dispatch(
       postReview({
         review,

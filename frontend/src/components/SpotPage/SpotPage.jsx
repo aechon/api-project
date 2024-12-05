@@ -132,7 +132,7 @@ function SpotPage() {
     postReviewButton = (
       <OpenModalButton 
         buttonText="Post Your Review"
-        modalComponent={<PostReviewModal setNewReview={setReviewChange} />}
+        modalComponent={<PostReviewModal setNewReview={setReviewChange} id={id} />}
       />
     );
   }
