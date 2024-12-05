@@ -25,6 +25,9 @@ function PostReviewModal({setNewReview}) {
     e.preventDefault();
     setErrors('');
     setNewReview(true);
+    console.log(stars);
+    console.log(review);
+    console.log(id);
     return dispatch(
       postReview({
         review,

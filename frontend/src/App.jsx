@@ -8,6 +8,7 @@ import SpotPage from './components/SpotPage/SpotPage.jsx';
 import CreateSpotPage from './components/CreateSpotPage/CreateSpotPage.jsx';
 import ManageSpotsPage from './components/ManageSpotsPage/ManageSpotsPage.jsx';
 import UpdateSpotPage from './components/UpdateSpotPage/UpdateSpotPage.jsx';
+import TimeAppPage from './components/TimeAppPage/TimeAppPage.jsx';
 
 
 function Layout() {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
         path: '/spots/:id/edit',
         element: <UpdateSpotPage />
       },
+      {
+        path: '/timeapp',
+        element: <TimeAppPage />
+      }
     ]
   }
 ]);
